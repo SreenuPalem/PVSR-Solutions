@@ -131,6 +131,48 @@ export default function Home() {
         </p>
       </section>
 
+      {/* ================= RECENT PROJECTS ================= */}
+      <section className="recent-projects-section">
+        <div className="container">
+          <h2 className="section-title">Recent Projects</h2>
+
+          <p className="recent-projects-subtitle">
+            A snapshot of real-world projects showcasing our expertise across
+            software, machine learning, embedded systems, and engineering.
+          </p>
+
+          <div className="recent-projects-grid">
+            <div className="recent-project-card">
+              <h3>Smart Home Energy Monitoring System</h3>
+              <span>STM32 • Embedded C • IoT • Cloud</span>
+            </div>
+
+            <div className="recent-project-card">
+              <h3>Skin Disease Classification</h3>
+              <span>Python • CNN • TensorFlow • OpenCV</span>
+            </div>
+
+            <div className="recent-project-card">
+              <h3>Precision Agriculture Platform</h3>
+              <span>Flask • ML • IoT • Dashboards</span>
+            </div>
+
+            <div className="recent-project-card">
+              <h3>E-commerce Web Application</h3>
+              <span>React • Node.js • REST APIs</span>
+            </div>
+          </div>
+
+          <div className="text-center mt-10">
+            <Link href="/projects">
+              <button className="btn-primary">
+                View All Projects
+              </button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ================= CAPABILITIES ================= */}
       <section className="container py-24">
         <h2 className="section-title">Our Capabilities</h2>

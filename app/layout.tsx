@@ -1,8 +1,14 @@
 import "./globals.css";
+import { Inter } from "next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
 
 export const metadata = {
-  title: "Project Portal",
-  description: "Engineering & Software Project Solutions",
+  title: "PVSR Solutions",
+  description: "End-to-End Engineering & Software Project Solutions",
 };
 
 export default function RootLayout({
@@ -12,7 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={inter.className}>
+        {children}
+      </body>
     </html>
   );
 }
