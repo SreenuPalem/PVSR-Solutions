@@ -1,8 +1,9 @@
 "use client";
 
+import Image from "next/image";
+import Link from "next/link";
 import { Cpu, Globe, Wifi, CircuitBoard, Layers, Mail } from "lucide-react";
 import { motion } from "framer-motion";
-import Link from "next/link";
 
 const services = [
   {
@@ -60,9 +61,26 @@ const services = [
 export default function Home() {
   return (
     <main>
-      {/* HERO */}
+      {/* ================= HERO ================= */}
       <section className="hero-bg">
         <div className="container py-28 text-center">
+
+          {/* LOGO */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="flex justify-center mb-6"
+          >
+            <Image
+              src="/logo.png"
+              alt="PVSR Solutions Logo"
+              width={120}
+              height={120}
+              priority
+            />
+          </motion.div>
+
+          {/* TITLE */}
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -71,14 +89,20 @@ export default function Home() {
             PVSR Solutions
           </motion.h1>
 
+          {/* SUBTITLE */}
           <p className="hero-subtitle">
-            End-to-End Engineering & Software Project Solutions  
-            <br /> From Basic Concepts to Advanced Deployment
+            End-to-End Engineering & Software Project Solutions
+            <br />
+            From Basic Concepts to Advanced Deployment
           </p>
 
+          {/* CTA + EMAIL */}
           <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
             <Link href="/submit-project">
-              <motion.button whileHover={{ scale: 1.05 }} className="btn-primary">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                className="btn-primary"
+              >
                 Submit Your Project
               </motion.button>
             </Link>
@@ -91,7 +115,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CAPABILITIES */}
+      {/* ================= CAPABILITIES ================= */}
       <section className="container py-24">
         <h2 className="section-title">Our Capabilities</h2>
 
@@ -122,7 +146,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOOTER */}
+      {/* ================= FOOTER ================= */}
       <footer className="footer">
         <p>📧 pvsr.solutions@gmail.com</p>
         <p className="mt-2">
