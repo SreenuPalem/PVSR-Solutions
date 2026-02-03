@@ -72,7 +72,7 @@ export default function Home() {
             className="flex justify-center mb-6"
           >
             <Image
-              src="/logo.png"
+              src="/Icons.png"
               alt="PVSR Solutions Logo"
               width={120}
               height={120}
