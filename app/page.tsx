@@ -72,7 +72,7 @@ export default function Home() {
             className="flex justify-center mb-6"
           >
             <Image
-              src="/Icons.png"
+              src="/logo.png"
               alt="PVSR Solutions Logo"
               width={120}
               height={120}
@@ -96,14 +96,14 @@ export default function Home() {
             From Basic Concepts to Advanced Deployment
           </p>
 
-          {/* CTA + EMAIL */}
+          {/* CTA + CONTACT */}
           <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
             <Link href="/submit-project">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 className="btn-primary"
               >
-                Submit Your Project
+                Submit Project Requirements
               </motion.button>
             </Link>
 
@@ -113,6 +113,22 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* ================= ABOUT ================= */}
+      <section className="container py-20">
+        <h2 className="section-title">About PVSR Solutions</h2>
+
+        <p className="max-w-4xl mx-auto text-center text-slate-600 text-lg leading-relaxed">
+          <strong>PVSR Solutions</strong> provides end-to-end project development services across
+          <strong> Machine Learning, Web Development, IoT, PCB Design, and Engineering domains</strong>.
+          <br /><br />
+          We undertake <strong>projects of any type and complexity</strong>—from basic concepts and
+          prototypes to advanced, industry-level, production-ready systems.
+          <br /><br />
+          Every project is developed <strong>strictly based on client requirements</strong>, ensuring
+          clear understanding, structured execution, high technical quality, and on-time delivery.
+        </p>
       </section>
 
       {/* ================= CAPABILITIES ================= */}
